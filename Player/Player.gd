@@ -53,6 +53,9 @@ func _process(_delta: float) -> void:
 	
 	if Input.is_action_pressed("move_sprint"):
 		_is_sprinting_input = true
+	
+	if Input.is_action_just_pressed("cancel"):
+		get_tree().quit()
 
 
 # Called every physics tick. 'delta' is constant
